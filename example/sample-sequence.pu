@@ -1,4 +1,4 @@
-@startuml
+@startuml sample-seqeunce
 !includeurl https://raw.githubusercontent.com/jurgenei/generate-plantuml-action/master/example/ing.iuml!0
 actor Foo1
 boundary Foo2
