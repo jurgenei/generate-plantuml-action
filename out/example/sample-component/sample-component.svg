@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="122px" preserveAspectRatio="none" style="width:308px;height:122px;" version="1.1" viewBox="0 0 308 122" width="308px" zoomAndPan="magnify"><defs/><g><!--entity First component--><rect fill="#FFFFFF" height="37.8122" rx="2.5" ry="2.5" style="stroke: #FF6200; stroke-width: 1.5;" width="123" x="6" y="8"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="1" y="13"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="1" y="35.8122"/><text fill="#000066" font-family="ING Me" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="103" x="16" y="31.9923">First component</text><!--entity Comp2--><rect fill="#FFFFFF" height="37.8122" rx="2.5" ry="2.5" style="stroke: #FF6200; stroke-width: 1.5;" width="148" x="149.5" y="8"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="144.5" y="13"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="144.5" y="35.8122"/><text fill="#000066" font-family="ING Me" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="128" x="159.5" y="31.9923">Another component</text><!--entity Comp3--><rect fill="#FFFFFF" height="37.8122" rx="2.5" ry="2.5" style="stroke: #FF6200; stroke-width: 1.5;" width="65" x="35" y="65"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="30" y="70"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="30" y="92.8122"/><text fill="#000066" font-family="ING Me" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="45" x="45" y="88.9923">Comp3</text><!--entity Comp4--><rect fill="#FFFFFF" height="55.6244" rx="2.5" ry="2.5" style="stroke: #FF6200; stroke-width: 1.5;" width="93" x="120" y="56"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="115" y="61"/><rect fill="#FFFFFF" height="5" style="stroke: #FF6200; stroke-width: 1.5;" width="10" x="115" y="101.6244"/><text fill="#000066" font-family="ING Me" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="26" x="130" y="79.9923">Last</text><text fill="#000066" font-family="ING Me" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="73" x="130" y="97.8045">component</text><!--link First component to Comp2--><!--link First component to Comp3--><!--link Comp3 to Comp4--><!--
+@startuml
+
+
+
+skinparam  {
+ NodeSep 20
+ RankSep 10
+ Padding 0
+}
+
+
+hide circle
+hide footbox
+
+skinparam  {
+  shadowing       false
+  roundcorner     5
+  arrowColor      #ff6200
+  maxMessageSize  200
+}
+skinparam default {
+  FontName    "ING Me"
+  FontColor   #000066
+}
+skinparam activity {
+  BorderColor                #ff6200
+  BackgroundColor            White
+  FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+  DiamondBorderColor         #ff6200
+  DiamondBackgroundColor     White
+  StartColor                 #ff6200
+  BarColor                   #ff6200
+  EndColor                   #ff6200
+}
+skinparam actor {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam agent {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam artifact {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam boundary {
+    BorderColor                #ff6200
+  BackgroundColor            White
+  FontStyle                  bold
+}
+skinparam class {
+  BorderColor                #ff6200
+  BackgroundColor            White
+  FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+  StartColor                 #ff6200
+  BarColor                   #ff6200
+  EndColor                   #ff6200
+}
+skinparam card {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam cloud {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam collections {
+  BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam component {
+  InterfaceBorderColor       #ff6200
+  BorderColor                #ff6200
+  BackgroundColor            White
+  FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam control {
+    BorderColor                #ff6200
+  BackgroundColor            White
+  FontStyle                  bold
+}
+skinparam database {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam entity {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam file {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam folder {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam frame {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam interface {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam node {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam note {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam object {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam package {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam participant {
+  Padding                     2
+  FontStyle                   bold
+  BackgroundColor             White
+}
+skinparam queue {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam rectangle {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+skinparam stack {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+skinparam storage {
+    BorderColor                #ff6200
+  BackgroundColor            White
+}
+
+skinparam sequence {
+  LifeLineBorderColor         #ff6200
+  ParticipantBorderColor      #ff6200
+  BoxLineColor                #ff6200
+  BoxBorderColor              #ff6200
+  DividerLineColor            #349651
+  DividerBorderColor          #349651
+  GroupLineColor              #349651
+  GroupBorderColor            #349651
+  GroupBackgroundColor        White
+  ArrowThickness              2
+}
+skinparam state {
+  BorderColor                 #ff6200
+  EndColor                    #ff6200
+  StartColor                  #ff6200
+  BackgroundColor             White
+}
+skinparam usecase {
+    BorderColor                #ff6200
+  BackgroundColor            White
+    FontColor<<orange>>        White
+  BackgroundColor<<orange>>  #ff6200
+  BorderColor<<orange>>      White
+  FontColor<<blue>>          White
+  BackgroundColor<<blue>>    #000066
+  BorderColor<<blue>>        White
+  FontColor<<green>>         White
+  BackgroundColor<<green>>   #349651
+  BorderColor<<green>>       White
+  FontColor<<red>>           White
+  BackgroundColor<<red>>     Red
+  BorderColor<<red>>         White
+}
+
+hide     <<orange>> stereotype
+hide     <<blue>>   stereotype
+hide     <<green>>  stereotype
+hide     <<red>>    stereotype
+[First component]
+[Another component] as Comp2  
+component Comp3
+component [Last\ncomponent] as Comp4
+
+@enduml
+
+PlantUML version 1.2019.09(Mon Aug 26 18:19:51 CEST 2019)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Java Version: 1.8.0_231-b11
+Operating System: Windows 10
+OS Version: 10.0
+Default Encoding: Cp1252
+Language: en
+Country: US
+--></g></svg>
