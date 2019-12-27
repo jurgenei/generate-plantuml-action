@@ -1,0 +1,324 @@
+'plantuml macro's for ING style sketches
+
+!define ing_orange #ff6200
+!define ing_blue   #000066
+!define ing_green  #349651
+!define ing_white  White
+!define ing_red    Red
+
+skinparam  {
+ NodeSep 20
+ RankSep 10
+ Padding 0
+}
+
+!define table(x) class x << (T,#CCCCCC) >>
+!define view(x) class x << (V,#CCCCCC) >>
+!define dblink(x) class x << (@,#CCCCCC) >>
+!define primary_key(x) <u>x</u>
+!define atable(x,y) class "x" as y << (T,#CCCCCC) >>
+!define aview(x,y) class "x" as y << (V,#CCCCCC) >>
+!define adblink(x,y) class "x" as y << (@,#CCCCCC) >>
+
+hide circle
+hide footbox
+
+skinparam  {
+  shadowing       false
+  roundcorner     5
+  arrowColor      ing_orange
+  'boxPadding      1
+  maxMessageSize  200
+}
+skinparam default {
+  FontName    "ING Me"
+  FontColor   ing_blue
+}
+skinparam activity {
+  BorderColor                ing_orange
+  BackgroundColor            ing_white
+  FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+  DiamondBorderColor         ing_orange
+  DiamondBackgroundColor     ing_white
+  StartColor                 ing_orange
+  BarColor                   ing_orange
+  EndColor                   ing_orange
+}
+skinparam actor {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam agent {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam artifact {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam boundary {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+  FontStyle                  bold
+}
+skinparam class {
+  BorderColor                ing_orange
+  BackgroundColor            ing_white
+  FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+  StartColor                 ing_orange
+  BarColor                   ing_orange
+  EndColor                   ing_orange
+}
+skinparam card {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam cloud {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam collections {
+  BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam component {
+  InterfaceBorderColor       ing_orange
+  BorderColor                ing_orange
+  BackgroundColor            ing_white
+  FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam control {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+  FontStyle                  bold
+}
+skinparam database {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam entity {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam file {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam folder {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam frame {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam interface {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam node {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam note {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam object {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam package {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam participant {
+  Padding                     2
+  FontStyle                   bold
+  BackgroundColor             ing_white
+}
+skinparam queue {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam rectangle {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+skinparam stack {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+skinparam storage {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+}
+
+skinparam sequence {
+  LifeLineBorderColor         ing_orange
+  ParticipantBorderColor      ing_orange
+  BoxLineColor                ing_orange
+  BoxBorderColor              ing_orange
+  DividerLineColor            ing_green
+  DividerBorderColor          ing_green
+  GroupLineColor              ing_green
+  GroupBorderColor            ing_green
+  GroupBackgroundColor        ing_white
+  ArrowThickness              2
+}
+skinparam state {
+  BorderColor                 ing_orange
+  EndColor                    ing_orange
+  StartColor                  ing_orange
+  BackgroundColor             ing_white
+}
+skinparam usecase {
+    BorderColor                ing_orange
+  BackgroundColor            ing_white
+    FontColor<<orange>>        ing_white
+  BackgroundColor<<orange>>  ing_orange
+  BorderColor<<orange>>      ing_white
+  FontColor<<blue>>          ing_white
+  BackgroundColor<<blue>>    ing_blue
+  BorderColor<<blue>>        ing_white
+  FontColor<<green>>         ing_white
+  BackgroundColor<<green>>   ing_green
+  BorderColor<<green>>       ing_white
+  FontColor<<red>>           ing_white
+  BackgroundColor<<red>>     ing_red
+  BorderColor<<red>>         ing_white
+}
+
+hide     <<orange>> stereotype
+hide     <<blue>>   stereotype
+hide     <<green>>  stereotype
+hide     <<red>>    stereotype
