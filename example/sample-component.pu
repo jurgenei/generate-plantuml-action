@@ -1,5 +1,6 @@
 @startuml
 
+!includeurl https://raw.githubusercontent.com/jurgenei/generate-plantuml-action/master/example/ing.iuml!0
 [First component]
 [Another component] as Comp2  
 component Comp3

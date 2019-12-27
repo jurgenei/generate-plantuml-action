@@ -1,4 +1,5 @@
 @startuml
+!includeurl https://raw.githubusercontent.com/jurgenei/generate-plantuml-action/master/example/ing.iuml!0
 
 [*] --> State1
 State1 --> [*]

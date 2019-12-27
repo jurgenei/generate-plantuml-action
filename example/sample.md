@@ -5,6 +5,8 @@ Set `plantuml:{filename}` as a fence information. `filename` is used as the file
 
 ```plantuml:md-sample-sequence
 @startuml
+!includeurl https://raw.githubusercontent.com/jurgenei/generate-plantuml-action/master/example/ing.iuml!0
+
 actor Foo1
 boundary Foo2
 control Foo3
@@ -24,6 +26,8 @@ Foo1 -> Foo6 : To collections
 `@startuml` can be omitted. This action complements `@startuml` and `@enduml`.
 
 ```plantuml:md-sample-class
+!includeurl https://raw.githubusercontent.com/jurgenei/generate-plantuml-action/master/example/ing.iuml!0
+
 Class01 <|-- Class02
 Class03 *-- Class04
 Class05 o-- Class06
@@ -36,7 +40,9 @@ Class09 -- Class10
 You can also use diagrams other than uml. See https://plantuml.com/ to confirm what kind of diagrams you can use.
 
 ```plantuml:md-sample-mindmap
+
 @startmindmap
+
 * Debian
 ** Ubuntu
 *** Linux Mint
